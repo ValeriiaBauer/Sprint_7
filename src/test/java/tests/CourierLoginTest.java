@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 
-import Steps.ScooterClient;
-import Utils.CleanupUtils;
+import steps.CourierClient;
+import utils.CleanupUtils;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
@@ -13,7 +13,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 
 public class CourierLoginTest {
 
-    private final ScooterClient client = new ScooterClient();
+    private final CourierClient client = new CourierClient();
     private String testLogin;
     private final String testPassword = "1234";
     private final String testFirstName = "sheldon";

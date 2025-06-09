@@ -1,14 +1,15 @@
-package Tests;
+package tests;
 
-import Steps.ScooterClient;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
+import steps.OrderClient;
+
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.core.IsNull.notNullValue;
 
 public class OrderListTest {
 
-    private final ScooterClient client = new ScooterClient();
+    private final OrderClient client = new OrderClient();
 
     @Test
     @DisplayName("Получение списка заказов должен возвращать непустой список")

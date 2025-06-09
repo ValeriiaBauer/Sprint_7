@@ -1,17 +1,18 @@
-package Tests;
+package tests;
 
-import Steps.ScooterClient;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.praktikum.Order;
+import steps.CourierClient;
+import steps.OrderClient;
 
 import static org.hamcrest.core.IsNull.notNullValue;
 
 @RunWith(Parameterized.class)
 public class OrderCreationTest {
-    private final ScooterClient client = new ScooterClient();
+    private final OrderClient client = new OrderClient();
     private final String[] colors;
 
     public OrderCreationTest(String[] colors) {

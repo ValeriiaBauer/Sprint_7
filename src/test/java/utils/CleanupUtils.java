@@ -1,15 +1,15 @@
-package Utils;
+package utils;
 
-import Steps.ScooterClient;
 import io.qameta.allure.Allure;
 import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import ru.praktikum.CourierCredentials;
+import steps.CourierClient;
 
 public class CleanupUtils {
     private static final Logger logger = LogManager.getLogger(CleanupUtils.class);
-    private static final ScooterClient client = new ScooterClient();
+    private static final CourierClient client = new CourierClient();
 
     public static void deleteCourier(String login, String password) {
         try {
